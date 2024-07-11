@@ -1,0 +1,98 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body>header{
+    background-color: gray;
+    color: white;
+    padding: 16px 0;
+
+}
+header li a{
+    color: white;
+}
+header .container{ 
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header li{
+    display: inline;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 16px;
+}
+.container{
+    width: 1366px;
+    margin: 0 auto;
+}
+.articles{
+    display:flex;
+    flex-wrap: wrap;    /*organiza a forma que as "imagens" nesse caso se comportam */
+    justify-content: space-between;
+}
+.articles article img{
+   /* height: 180px; */
+    width: 100%;
+}
+.articles article{
+    width: 30%;
+    margin-bottom: 16px;
+}
+section{
+    padding:16px 0;
+}
+section h2{
+    margin-bottom: 16px;
+    font-size: 32px;
+}
+
+.articles article h3{
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+.articles article a{
+    background-color: blue;
+    color: white;
+    padding: 8px;
+    display: inline-block;  /*definindo essa propriedade para não sobrepor elementos e "cair para a proxima linha" */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 8px;
+}
+.articles article a:hover{
+    text-decoration:underline;
+}
+.articles article p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#sports{
+    background: rgba(0, 255, 0, 0.1);
+}
+#sports .articles article a {
+    background-color: green;
+}
+#economy{
+    background-color: rgb(223, 223, 190);
+}
+#economy article a{
+    background-color: rgb(187, 187, 142);
+}
+#tecnologia{
+    background-color: rgba(60, 60, 73, 0.8);
+}
+#tecnologia article a{
+    background-color: rgb(35, 35, 68);
+}
+#entreterimento{
+    background-color: rgba(226, 145, 186, 0.2);
+}
+#entreterimento article a{
+    background-color: pink;
+}
+
+
